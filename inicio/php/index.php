@@ -23,12 +23,12 @@
         </tr>
         <tr>
             <td>
-                <a href="../logCad/login.php"><button>Entrar</button></a>
+                <a href="login.php"><button>Entrar</button></a>
             </td>
         </tr>
         <tr>
             <td>
-                <a href="../logCad/cadastro.php"><button>Cadastrar</button></a>
+                <a href="cadastro.php"><button>Cadastrar</button></a>
             </td>
         </tr>
     </table>
