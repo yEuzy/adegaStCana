@@ -41,6 +41,7 @@ include './scripts/conexao.php';
             </table>
         </form>
     </div>
+    <a href="index.php"><button>voltar</button></a>
 
 
     <?php

@@ -1,4 +1,4 @@
-<?php 
+    <?php 
 
 include './scripts/conexao.php';
 

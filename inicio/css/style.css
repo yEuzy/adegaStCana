@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --tema: white;
+    
+}
+
 
 body{
     display: flex;
