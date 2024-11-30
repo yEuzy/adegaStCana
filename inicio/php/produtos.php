@@ -31,7 +31,7 @@ include './scripts/conexao.php';
                     <td><input type="text" name="quant"></td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="4">
                         <button type='submit'>Pesquisar</button>
                     </td>
                 </tr>
@@ -76,7 +76,7 @@ if($_GET != null){
                                 <td>
                                     <p>Preço: 
                                 </td>
-                                <td>'.$produto['preco'].'
+                                <td>'.'R$ ' .$produto['preco'].'
                                 </td>
                             </tr>
                             <br>
@@ -84,13 +84,14 @@ if($_GET != null){
                                 <td>
                                     <p>Quantidade: 
                                 </td>
-                                <td>'.$produto['quantididade'].'
+                                <td>'.$produto['quantididade'] . ($produto['quantididade'] == 1 ? " Unidade": " Unidades")
+                                 .'
                                 </td>
                             </tr>
                         </table>
                     </div>'; 
-                
-            }    
+                echo "<br>";
+            } 
         }
             die();
     }else{
@@ -119,7 +120,7 @@ if($_GET != null){
                                 <td>
                                     <p>Preço: 
                                 </td>
-                                <td>'.$produto['preco'].'
+                                <td>'.'R$ ' .$produto['preco'].'
                                 </td>
                             </tr>
                             <br>
@@ -127,7 +128,8 @@ if($_GET != null){
                                 <td>
                                     <p>Quantidade: 
                                 </td>
-                                <td>'.$produto['quantididade'].'
+                                <td>'.$produto['quantididade'] . ($produto['quantididade'] == 1 ? " Unidade": " Unidades")
+                                .'
                                 </td>
                             </tr>
                         </table>

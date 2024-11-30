@@ -1,5 +1,6 @@
 <?php 
 
+include './scripts/logadoindex.php';
 
 ?>
 

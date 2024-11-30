@@ -13,9 +13,9 @@
     include './scripts/protect.php';
     include './scripts/adm.php';
     ?>
-    <h1>Ola,</h1>
+    <h1>Ola, <?= $_SESSION['nome']?></h1>
     <p>este é o inicio da nossa pagina.</p>
-    <p><?= 'ola'.$_SESSION['nome']?></p>
+
 
     <a href="./scripts/logout.php"><button>Sair</button></a>
 </body>

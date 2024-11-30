@@ -62,7 +62,8 @@ include './scripts/conexao.php';
                 session_start(); 
                 
                 $_SESSION['id'] = $usuario['id'];
-                $_SESSION['nome'] = $usuario['nome'];
+                $_SESSION['nome'] = $usuario['usuario'];
+                
                 header('Location: ./inicio.php');
                 
                 }          
