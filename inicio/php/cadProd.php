@@ -2,6 +2,7 @@
 <?php 
 
 include './scripts/conexao.php';
+include './scripts/navout.php';
 
 ?>
 
@@ -16,20 +17,13 @@ include './scripts/conexao.php';
     <title>Cadastro de Produto</title>
 </head>
 <body>
-<<<<<<< HEAD
 
 
 
 <?php
     include './scripts/protect.php';
     ?>
-    <nav><div id='navbar'><a href="./scripts/logout.php"><button id="voltar">Logout</button></a></div></nav>
-    <br><br><br>
-=======
-<?php
-    include './scripts/protect.php';
-    ?>
->>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
+    
     <div class="container">
         <h1>Cadastro de Produto</h1>
         <form action="cadprod.php" method="POST">

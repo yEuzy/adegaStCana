@@ -1,9 +1,6 @@
 <?php 
 
-<<<<<<< HEAD
 include './scripts/logadoindex.php';
-=======
->>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 
 ?>
 

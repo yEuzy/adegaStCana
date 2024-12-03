@@ -1,11 +1,9 @@
 
-<<<<<<< HEAD
 <?php
-include './scripts/conexao.php';  
+include './scripts/conexao.php';
+include './scripts/navout.php';
 ?>
 
-=======
->>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +14,7 @@ include './scripts/conexao.php';
     <title>Inicio</title>
 </head>
 <body>
-<<<<<<< HEAD
-    
-    <nav><div id='navbar'><a href="./scripts/logout.php"><button id="voltar">Logout</button></a></div></nav>
-    <br><br><br>
+
 
     <?php
     
@@ -52,22 +47,11 @@ include './scripts/conexao.php';
                         <td>".$produto['quantididade']."
                         </td>   ";
                         echo "</tr><tr><td colspan='4'><button>Adicionar ao carrinho</button></td></tr></table>";
-                        echo'</div>';       
+                        echo'</div><br>';       
             }
         }
     ?>
 
     <a href="./index.php"><button>Sair</button></a>
-=======
-    <?php
-    include './scripts/protect.php';
-    include './scripts/adm.php';
-    ?>
-    <h1>Ola,</h1>
-    <p>este é o inicio da nossa pagina.</p>
-    <p><?= 'ola'.$_SESSION['nome']?></p>
-
-    <a href="./scripts/logout.php"><button>Sair</button></a>
->>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 </body>
 </html>
