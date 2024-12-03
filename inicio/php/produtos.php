@@ -14,6 +14,8 @@ include './scripts/conexao.php';
     <title>Listar Produtos</title>
 </head>
 <body>
+<nav><div id='navbar'><a href="./scripts/logout.php"><button id="voltar">Logout</button></a></div></nav>
+<br><br><br>
     <h1>Pesquisar Produtos</h1>
     <div id="container">
     <table>
@@ -45,7 +47,7 @@ include './scripts/conexao.php';
 
 <?php 
 
-if($_GET != null){
+if(!empty($_GET)){
     if(!empty($_GET['nome']) || (!empty($_GET['preco']) || (!empty($_GET['quant'])))){
         $nome = $conn->real_escape_string($_GET['nome']);
         $preco = $conn->real_escape_string($_GET['preco']);

@@ -13,17 +13,24 @@ include './scripts/conexao.php';
     <title>Inicio</title>
 </head>
 <body>
+    
+    <nav><div id='navbar'><a href="./scripts/logout.php"><button id="voltar">Logout</button></a></div></nav>
+    <br><br><br>
+
     <?php
+    
     include './scripts/protect.php';
     include './scripts/adm.php';
+    echo '<a href="produtos.php"><button>Produtos</button></a>';
+
     ?>
     <h1>Ola, <?= $_SESSION['nome']?></h1>
     <p>este é o inicio da nossa pagina.</p>
-
     <p>Alguns de nossos produtos a seguir</p>
+
     <?php 
     
-    $sql = "SELECT * FROM produtos";
+    $sql = "SELECT * FROM produtos ORDER BY RAND()";
     
     $res = $conn->query($sql);
     $quant = $res->num_rows;
@@ -41,15 +48,11 @@ include './scripts/conexao.php';
                         <td>".$produto['quantididade']."
                         </td>   ";
                         echo "</tr><tr><td colspan='4'><button>Adicionar ao carrinho</button></td></tr></table>";
-                        echo'</div>';
-                    
+                        echo'</div>';       
             }
-
         }
-
-
     ?>
 
-    <a href="./scripts/logout.php"><button>Sair</button></a>
+    <a href="./index.php"><button>Sair</button></a>
 </body>
 </html>

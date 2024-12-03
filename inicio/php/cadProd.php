@@ -16,9 +16,14 @@ include './scripts/conexao.php';
     <title>Cadastro de Produto</title>
 </head>
 <body>
+
+
+
 <?php
     include './scripts/protect.php';
     ?>
+    <nav><div id='navbar'><a href="./scripts/logout.php"><button id="voltar">Logout</button></a></div></nav>
+    <br><br><br>
     <div class="container">
         <h1>Cadastro de Produto</h1>
         <form action="cadprod.php" method="POST">
