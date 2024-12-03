@@ -41,7 +41,10 @@ include './scripts/conexao.php';
             </table>
         </form>
     </div>
+<<<<<<< HEAD
     <a href="index.php"><button>voltar</button></a>
+=======
+>>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 
 
     <?php
@@ -63,8 +66,12 @@ include './scripts/conexao.php';
                 session_start(); 
                 
                 $_SESSION['id'] = $usuario['id'];
+<<<<<<< HEAD
                 $_SESSION['nome'] = $usuario['usuario'];
                 
+=======
+                $_SESSION['nome'] = $usuario['nome'];
+>>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
                 header('Location: ./inicio.php');
                 
                 }          

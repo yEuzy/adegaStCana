@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 :root{
     --tema: white;
     
@@ -14,13 +15,18 @@
 html{
     padding: 0;
 }
+=======
+>>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     padding: 0px;
+=======
+>>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 }
 
 #container{
@@ -30,7 +36,10 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0;
+<<<<<<< HEAD
     margin:10px;
+=======
+>>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 }
 
 button{
@@ -64,6 +73,7 @@ input{
 
 h1{
     padding-top: 100px;
+<<<<<<< HEAD
 }
 
 #navbar{
@@ -87,4 +97,6 @@ h1{
 
 #voltar:hover{
     transform: none;
+=======
+>>>>>>> b4af1896e0b6b67c0276f976930afaf7334c2bba
 }
