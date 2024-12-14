@@ -37,7 +37,7 @@ body{
     display: block;
     position: absolute;
     top: 10%;
-    left: 0%;
+    left: -30%;
     background-color: red;
     width: clamp(200px,30%,30%);
     height: 90%;

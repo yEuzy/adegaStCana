@@ -2,7 +2,8 @@
 <?php
 include './scripts/conexao.php';
 include './scripts/navout.php';
-include './scripts/protect.php';
+
+include './scripts/sidebropen.php';
 
 ?>
 
@@ -16,44 +17,7 @@ include './scripts/protect.php';
     <title>Vendas</title>
 </head>
 <body>
-    <div id="sideb">
-        <div id="imgdiv">
-            <?php
-                echo '<h2>' . $_SESSION["nome"] .'</h2><br>';
-            ?>
-            <img id="profimg" src="" alt="Nome do usuario">
-        </div>
-        <div id="options">
-            <a href="">
-                <button>Cadastrar Produtos</button>
-            </a>
-            <a href="">
-                <button>Listar Vendas</button>
-            </a>
-            <a href="">
-                <button>Listar Usuarios</button>
-            </a>
-        </div>
-    </div>
-    <script> let botao = document.getElementById("sidebutt")
-            let sidsts = false
-            botao.addEventListener("click", function(e){
-                if(!sidsts){
-                let sidebar = document.getElementById("sideb");
-                sidebar.style.left = "-30%";
-                botao.innerText = "X";
-                sidsts = true;
-                }else{
-                    let sidebar = document.getElementById("sideb");
-                    sidebar.style.left = "0%";
-                    botao.innerText = "≡";
-                    sidsts = false;
-                }
-
-            }
-)</script>
-    <?php
-    echo ''
-    ?>
+    <h1>Pagina de Vendas</h1>
+    
 </body>
 </html>
