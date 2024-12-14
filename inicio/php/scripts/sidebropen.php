@@ -10,6 +10,10 @@ echo '
             <img id="profimg" src="" alt="Nome do usuario">
         </div>
         <div id="options">
+        
+            <a href="./inicio.php">
+                <button>Inicio</button>
+            </a>
             <a href="./cadProd.php">
                 <button>Cadastrar Produtos</button>
             </a>
@@ -21,7 +25,6 @@ echo '
             </a>
         </div>
     </div>
-
 
 <script> let botao = document.getElementById("sidebutt")
             let sidsts = false

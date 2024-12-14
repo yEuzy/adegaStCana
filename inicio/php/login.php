@@ -60,8 +60,7 @@ include './scripts/conexao.php';
                 $usuario = $res->fetch_assoc();
 
                 if(!isset($_SESSION)){
-                session_start(); 
-                
+                session_start();   
                 $_SESSION['id'] = $usuario['id'];
                 $_SESSION['nome'] = $usuario['usuario'];
                 
