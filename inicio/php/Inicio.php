@@ -52,6 +52,5 @@ include './scripts/navout.php';
         }
     ?>
 
-    <a href="./index.php"><button>Sair</button></a>
 </body>
 </html>
