@@ -7,7 +7,7 @@ echo '
 <div id="sideb">
         <div id="imgdiv">
              <h2>' .  $_SESSION["nome"]    .'</h2><br>
-            <img id="profimg" src="" alt="Nome do usuario">
+            <img id="profimg" src="" alt="Foto do usuario">
         </div>
         <div id="options">
         

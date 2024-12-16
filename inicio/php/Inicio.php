@@ -18,7 +18,6 @@ include './scripts/sidebropen.php';
 
 
     <?php
-    
     include './scripts/protect.php';
     include './scripts/adm.php';
     echo '<a href="produtos.php"><button>Produtos</button></a>';
