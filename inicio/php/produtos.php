@@ -2,7 +2,7 @@
 
 include './scripts/conexao.php';
 include './scripts/navout.php';
-include './scripts/sidebropen.php';
+include './scripts/adm.php';
 
 ?>
 
