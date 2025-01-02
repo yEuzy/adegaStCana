@@ -20,7 +20,7 @@ echo '
             <a href="./vendas.php">
                 <button>Listar Vendas</button>
             </a>
-            <a href="">
+            <a href="usuarios.php">
                 <button>Listar Usuarios</button>
             </a>
         </div>
