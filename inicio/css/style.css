@@ -31,14 +31,15 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10%;
+    box-sizing: border-box;
 }
 
 #sideb{
     display: block;
     position: fixed;
     top: 10%;
-    left: -30%;
-    background-color: red;
+    left: -100%;
+    /* background-color: red;  */
     width: clamp(200px,30%,30%);
     height: 90%;
     align-items: center;
@@ -101,6 +102,7 @@ button:hover{
     transition: 0.5s;
     transform: translateY(-10px);
     scale: 110%;
+    
 }
 
 /* td{border: solid 2px green;}

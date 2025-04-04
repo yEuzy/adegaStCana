@@ -14,6 +14,9 @@ if(isset($_SESSION['adm'])){
                 <a href="./inicio.php">
                     <button>Inicio</button>
                 </a>
+                <a href="./vender.php">
+                    <button>Vender</button>
+                </a>
                 <a href="./cadProd.php">
                     <button>Cadastrar Produtos</button>
                 </a>
@@ -36,7 +39,7 @@ if(isset($_SESSION['adm'])){
                         sidsts = true;
                     }else{
                         let sidebar = document.getElementById("sideb");
-                        sidebar.style.left = "-30%";
+                        sidebar.style.left = "-100%";
                         botao.innerText = "≡";
                         sidsts = false;
                     }
@@ -69,7 +72,7 @@ if(isset($_SESSION['adm'])){
                         sidsts = true;
                     }else{
                         let sidebar = document.getElementById("sideb");
-                        sidebar.style.left = "-30%";
+                        sidebar.style.left = "-100%";
                         botao.innerText = "≡";
                         sidsts = false;
                     }
