@@ -27,8 +27,6 @@
                         <input list="produtosuge" id="produtosug">
                         <datalist id="produtosuge">';
 
-                include './scripts/pesqSuge.php';
-
                 $sql = "SELECT * FROM produtos";
 
                 $res = $conn->query($sql);
@@ -37,23 +35,24 @@
                 if($quant!=0){
                     for($i=0;$i<$quant;$i++){
                         $produto = $res->fetch_assoc();
-                            echo '<option value='.$produto['nome']. '>'. $produto['nome'].'</option>';
-
+                            echo '  <option value='.$produto['nome']. '>'. $produto['nome'].'</option>';
+                        }
+                        echo '</datalist>';
+                        /*echo '  <script>    inputprd = document.getElementById("produtosug");
+                                            inputprd.addEventListener("keydown", () =>{
+                                            for(i=0;i<'. $quant.';i++){
+                                                if(inputprd.value==inputprd.list[' . $i . ']){
+                                                    console.log("deucerto")
+                                                    console.log(inputprd.list)
                     }
-                }
-                if($quant!=0){
-                    for($i=0;$i<$quant;$i++){
-                        $produto = $res->fetch_assoc();
-                        echo '<script>console.log("'. $produto["nome"] .'")</script>';
+                    }}
+                    )
+                                            
+                                </script>'; */     
 
-                    }
+                    
                 }
-                echo '  </datalist>
-                        <input type="number" name="" id="qntprod">
-                        <script>let qntprod = document.getElementById("qntprod");
-                                produtosug.addEventListener("keypress", () =>{
-                                    if(qntprod.value>10){
-                                        qntprod.value = 10 }})</script>';
+                
             ?>
             
 
