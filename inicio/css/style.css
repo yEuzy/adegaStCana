@@ -32,7 +32,16 @@ body{
     justify-content: center;
     padding: 10%;
     box-sizing: border-box;
+
+    & form{
+        
+        & select{
+            border-radius: 1vh;
+            border: 1px solid black
+        }
+    }
 }
+
 
 #sideb{
     display: block;

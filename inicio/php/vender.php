@@ -1,4 +1,5 @@
 <?php 
+    
     include './scripts/conexao.php';
     include './scripts/navout.php';
     include './scripts/adm.php';
@@ -16,32 +17,50 @@
 <body>
     <h1>Vender</h1>
     <div id="container">
-        <form action="vender.php" method="GET">
+        <form action="vender.php" method="POST">
 
             
-            <label for="produto">Produto: </label>
-            <select name="produto" id="">
-                <option value=""></option>
-                <?php
+            
+            <?php
 
-                    $sql = "SELECT * FROM produtos";
+                echo '  <label for="produto">Produto: </label>
+                        <input list="produtosuge" id="produtosug">
+                        <datalist id="produtosuge">';
 
-                    $res = $conn->query($sql);
-                    $quant = $res->num_rows;
+                include './scripts/pesqSuge.php';
 
-                    if($quant!=0){
-                        echo 'oi';
-                        for($i=0;$i<$quant;$i++){
-                            $produto = $res->fetch_assoc();
-                                echo '<option value='.$produto['nome']. '>'. $produto['nome'].'</option>';
+                $sql = "SELECT * FROM produtos";
 
-                        }
+                $res = $conn->query($sql);
+                $quant = $res->num_rows;
+
+                if($quant!=0){
+                    for($i=0;$i<$quant;$i++){
+                        $produto = $res->fetch_assoc();
+                            echo '<option value='.$produto['nome']. '>'. $produto['nome'].'</option>';
+
                     }
+                }
+                if($quant!=0){
+                    for($i=0;$i<$quant;$i++){
+                        $produto = $res->fetch_assoc();
+                        echo '<script>console.log("'. $produto["nome"] .'")</script>';
 
-                ?>
+                    }
+                }
+                echo '  </datalist>
+                        <input type="number" name="" id="qntprod">
+                        <script>let qntprod = document.getElementById("qntprod");
+                                produtosug.addEventListener("keypress", () =>{
+                                    if(qntprod.value>10){
+                                        qntprod.value = 10 }})</script>';
+            ?>
+            
 
-            </select>
-            <button type='submit'>Pesquisar</button>
+            
+            
+
+            <button type='submit'>Adicionar</button>
             </form>
                 
     </div>
